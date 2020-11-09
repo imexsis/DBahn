@@ -1,0 +1,128 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4080728000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user is on the homepage",
+            "match": {
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T19:29:05.785Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7798243000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "de.dbahn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Verify Search Reiseauskunft results with API",
+        "description": "",
+        "id": "search-reiseauskunft-functionality;verify-search-reiseauskunft-results-with-api;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 471079000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "de.dbahn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3241794000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user searchs from \"Leipzig Hbf\" to \"Stuttgart Hbf\" with default inputs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leipzig Hbf\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Stuttgart Hbf\"",
+                  "offset": 39
+                }
+              ],
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.the_user_searchs_from_to_with_default_inputs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22980367000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "get the journey datas from UI",
+            "match": {
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.getTheJourneyDatasFromUI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8957991000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "verify UI start and arrive hours with API \"Leipzig Hbf\" \"Stuttgart Hbf\" hours data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leipzig Hbf\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Stuttgart Hbf\"",
+                  "offset": 56
+                }
+              ],
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.verifyUIStartAndArriveHoursWithAPIHoursData(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Search Reiseauskunft functionality",
+    "description": "",
+    "id": "search-reiseauskunft-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchReiseauskunft.feature",
+    "tags": []
+  }
+]
