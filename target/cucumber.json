@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4080728000,
+              "duration": 6494183000,
               "status": "passed"
             },
             "line": 9,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-08T19:29:05.785Z",
+        "start_timestamp": "2020-11-10T22:23:32.146Z",
         "before": [
           {
             "result": {
-              "duration": 7798243000,
+              "duration": 13702010000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 34,
-        "name": "Verify Search Reiseauskunft results with API",
+        "line": 17,
+        "name": "User searchs with valid city names, default inputs and gets related summary text",
         "description": "",
-        "id": "search-reiseauskunft-functionality;verify-search-reiseauskunft-results-with-api;;2",
+        "id": "search-reiseauskunft-functionality;user-searchs-with-valid-city-names--default-inputs-and-gets-related-summary-text;;2",
         "after": [
           {
             "result": {
-              "duration": 471079000,
+              "duration": 1438028000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3241794000,
+              "duration": 2854714000,
               "status": "passed"
             },
-            "line": 28,
+            "line": 13,
             "name": "the user searchs from \"Leipzig Hbf\" to \"Stuttgart Hbf\" with default inputs",
             "match": {
               "arguments": [
@@ -78,35 +78,23 @@
           },
           {
             "result": {
-              "duration": 22980367000,
+              "duration": 2306875000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "get the journey datas from UI",
-            "match": {
-              "location": "de.dbahn.step_definitions.SearchReiseauskunft.getTheJourneyDatasFromUI()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8957991000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "verify UI start and arrive hours with API \"Leipzig Hbf\" \"Stuttgart Hbf\" hours data",
+            "line": 14,
+            "name": "the search result topic should show the cities names \"Leipzig Hbf\" \"Stuttgart Hbf\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Leipzig Hbf\"",
-                  "offset": 42
+                  "offset": 53
                 },
                 {
                   "val": "\"Stuttgart Hbf\"",
-                  "offset": 56
+                  "offset": 67
                 }
               ],
-              "location": "de.dbahn.step_definitions.SearchReiseauskunft.verifyUIStartAndArriveHoursWithAPIHoursData(java.lang.String,java.lang.String)"
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.theSearchResultTopicShouldShowTheCitiesNames(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }

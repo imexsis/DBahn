@@ -8,7 +8,7 @@ Feature: Search Reiseauskunft functionality
   Background:
     Given the user is on the homepage
 
-
+  @wip
   Scenario Outline: User searchs with valid city names, default inputs and gets related summary text
     When the user searchs from "<cityStart>" to "<cityDest>" with default inputs
     Then the search result topic should show the cities names "<cityStart>" "<cityDest>"
@@ -23,7 +23,7 @@ Feature: Search Reiseauskunft functionality
     When the user searchs from "" to "" with default inputs
     Then the page title should be "Deutsche Bahn: bahn.de - Verbindungen - Ihre Anfrage"
 
-  @wip
+
   Scenario Outline: Verify Search Reiseauskunft results with API
     When the user searchs from "<cityStart>" to "<cityDest>" with default inputs
     And get the journey datas from UI

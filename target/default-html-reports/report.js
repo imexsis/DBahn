@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Verify Search Reiseauskunft results with API",
+  "name": "User searchs with valid city names, default inputs and gets related summary text",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -19,11 +19,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "get the journey datas from UI",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "verify UI start and arrive hours with API \"\u003ccityStart\u003e\" \"\u003ccityDest\u003e\" hours data",
+  "name": "the search result topic should show the cities names \"\u003ccityStart\u003e\" \"\u003ccityDest\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -64,7 +60,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify Search Reiseauskunft results with API",
+  "name": "User searchs with valid city names, default inputs and gets related summary text",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -84,21 +80,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "get the journey datas from UI",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "de.dbahn.step_definitions.SearchReiseauskunft.getTheJourneyDatasFromUI()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify UI start and arrive hours with API \"Leipzig Hbf\" \"Stuttgart Hbf\" hours data",
+  "name": "the search result topic should show the cities names \"Leipzig Hbf\" \"Stuttgart Hbf\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "de.dbahn.step_definitions.SearchReiseauskunft.verifyUIStartAndArriveHoursWithAPIHoursData(java.lang.String,java.lang.String)"
+  "location": "de.dbahn.step_definitions.SearchReiseauskunft.theSearchResultTopicShouldShowTheCitiesNames(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
