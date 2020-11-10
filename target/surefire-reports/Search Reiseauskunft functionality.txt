@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Search Reiseauskunft functionality
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.011 s - in Search Reiseauskunft functionality
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.761 s - in Search Reiseauskunft functionality

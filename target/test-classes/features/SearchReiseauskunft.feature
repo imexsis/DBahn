@@ -18,7 +18,7 @@ Feature: Search Reiseauskunft functionality
 #      | Dresden Hbf | Karlsruhe Hbf |
 #      | Berlin Hbf  | Hamburg Hbf   |
 
-
+  @smoke
   Scenario: User searchs with empty inputs
     When the user searchs from "" to "" with default inputs
     Then the page title should be "Deutsche Bahn: bahn.de - Verbindungen - Ihre Anfrage"

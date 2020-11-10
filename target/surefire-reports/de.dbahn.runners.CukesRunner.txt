@@ -3,5 +3,5 @@ Test set: de.dbahn.runners.CukesRunner
 -------------------------------------------------------------------------------
 Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in de.dbahn.runners.CukesRunner
 initializationError(de.dbahn.runners.CukesRunner)  Time elapsed: 0.005 s  <<< ERROR!
-java.lang.annotation.AnnotationTypeMismatchException: Incorrectly typed data found for annotation element public abstract java.lang.String[] io.cucumber.junit.CucumberOptions.tags() (Found data of type class java.lang.String[@wip])
+io.cucumber.core.exception.CucumberException: Unknown option: --tag
 

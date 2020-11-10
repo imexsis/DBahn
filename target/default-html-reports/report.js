@@ -4,43 +4,6 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "User searchs with valid city names, default inputs and gets related summary text",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user searchs from \"\u003ccityStart\u003e\" to \"\u003ccityDest\u003e\" with default inputs",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "the search result topic should show the cities names \"\u003ccityStart\u003e\" \"\u003ccityDest\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "cityStart",
-        "cityDest"
-      ]
-    },
-    {
-      "cells": [
-        "Leipzig Hbf",
-        "Stuttgart Hbf"
-      ]
-    }
-  ]
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -60,17 +23,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User searchs with valid city names, default inputs and gets related summary text",
+  "name": "User searchs with empty inputs",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@smoke"
     }
   ]
 });
 formatter.step({
-  "name": "the user searchs from \"Leipzig Hbf\" to \"Stuttgart Hbf\" with default inputs",
+  "name": "the user searchs from \"\" to \"\" with default inputs",
   "keyword": "When "
 });
 formatter.match({
@@ -80,11 +43,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the search result topic should show the cities names \"Leipzig Hbf\" \"Stuttgart Hbf\"",
+  "name": "the page title should be \"Deutsche Bahn: bahn.de - Verbindungen - Ihre Anfrage\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "de.dbahn.step_definitions.SearchReiseauskunft.theSearchResultTopicShouldShowTheCitiesNames(java.lang.String,java.lang.String)"
+  "location": "de.dbahn.step_definitions.SearchReiseauskunft.thePageTitleShouldBe(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

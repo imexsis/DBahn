@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6494183000,
+              "duration": 3295022000,
               "status": "passed"
             },
             "line": 9,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T22:23:32.146Z",
+        "start_timestamp": "2020-11-10T22:34:47.907Z",
         "before": [
           {
             "result": {
-              "duration": 13702010000,
+              "duration": 7969070000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 17,
-        "name": "User searchs with valid city names, default inputs and gets related summary text",
+        "line": 22,
+        "name": "User searchs with empty inputs",
         "description": "",
-        "id": "search-reiseauskunft-functionality;user-searchs-with-valid-city-names--default-inputs-and-gets-related-summary-text;;2",
+        "id": "search-reiseauskunft-functionality;user-searchs-with-empty-inputs",
         "after": [
           {
             "result": {
-              "duration": 1438028000,
+              "duration": 1482343000,
               "status": "passed"
             },
             "match": {
@@ -52,24 +52,24 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2854714000,
+              "duration": 2789084000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "the user searchs from \"Leipzig Hbf\" to \"Stuttgart Hbf\" with default inputs",
+            "line": 23,
+            "name": "the user searchs from \"\" to \"\" with default inputs",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Leipzig Hbf\"",
+                  "val": "\"\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"Stuttgart Hbf\"",
-                  "offset": 39
+                  "val": "\"\"",
+                  "offset": 28
                 }
               ],
               "location": "de.dbahn.step_definitions.SearchReiseauskunft.the_user_searchs_from_to_with_default_inputs(java.lang.String,java.lang.String)"
@@ -78,30 +78,26 @@
           },
           {
             "result": {
-              "duration": 2306875000,
+              "duration": 32374000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "the search result topic should show the cities names \"Leipzig Hbf\" \"Stuttgart Hbf\"",
+            "line": 24,
+            "name": "the page title should be \"Deutsche Bahn: bahn.de - Verbindungen - Ihre Anfrage\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Leipzig Hbf\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Stuttgart Hbf\"",
-                  "offset": 67
+                  "val": "\"Deutsche Bahn: bahn.de - Verbindungen - Ihre Anfrage\"",
+                  "offset": 25
                 }
               ],
-              "location": "de.dbahn.step_definitions.SearchReiseauskunft.theSearchResultTopicShouldShowTheCitiesNames(java.lang.String,java.lang.String)"
+              "location": "de.dbahn.step_definitions.SearchReiseauskunft.thePageTitleShouldBe(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@smoke"
           }
         ]
       }
